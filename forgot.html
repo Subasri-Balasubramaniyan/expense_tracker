@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forgot Password</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body style="background: url('./login.jpeg') no-repeat center center fixed; background-size: cover;">
+
+  <div class="header">
+    <h1>Wallet Watch</h1>
+  </div>
+
+  <div class="form">
+    <h1>Forgot Password</h1>
+    <form id="forgotForm">
+      <label for="email">Enter your email or username:</label><br>
+      <input type="text" id="email" name="email" required /><br>
+      <button type="submit" style="margin-top: 5px;">Send Reset Link</button>
+    </form>
+    <div class="end">
+      <p>Back to <a href="login.html">Login</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('forgotForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('If this account exists, a reset link has been sent.');
+      window.location.href = "login.html";
+    });
+  </script>
+
+</body>
+</html>

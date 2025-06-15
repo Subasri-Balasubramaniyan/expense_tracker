@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Wallet Watch</h1>
+    </div>
+    <div class="forms">
+        <h1>New User</h1>
+        <form id="signupForm">
+            <table>
+                <tr>
+                    <td>First Name :</td>
+                    <td><input type="text" placeholder="enter your first name"></td>
+                </tr>
+                 <tr>
+                    <td>Last Name :</td>
+                    <td><input type="text" placeholder="enter your last name"></td>
+                </tr>
+                 <tr>
+                    <td>E-mail :</td>
+                    <td><input type="email" placeholder="enter your mail id"></td>
+                </tr>
+                 <tr>
+                    <td>Contact no :</td>
+                    <td><input type="text" placeholder="enter your contact number"></td>
+                </tr>
+                 <tr>
+                    <td>Username:</td>
+                    <td><input type="text" placeholder="enter your username"></td>
+                </tr>
+                 <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="enter your password"></td>
+                </tr>
+                 <tr>
+                    <td>Confirm-password :</td>
+                    <td><input type="password" placeholder="Re-enter ypur password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Create</button></td>
+                </tr>
+            </table>
+        </form>
+        <div class="end">
+            <p>Already have an account ? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+    
+<script>
+  document.getElementById("signupForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop actual submission
+    window.location.href = "login.html"; // redirect to login page
+  });
+</script>
+
+</body>
+</html>

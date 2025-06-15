@@ -1,0 +1,193 @@
+body{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    background: url('./sign.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.forms {
+    /* background-color: #fff; */
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.forms h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forms input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.forms button {
+    padding: 10px 20px;
+    border: none;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    border: black solid 2px;
+    margin-top: 15px;
+}
+
+.forms button:hover {
+    background-color: beige;
+}
+
+.end {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.end a {
+    color: #007bff;
+    text-decoration: none;
+}
+.end a:hover {
+    text-decoration: underline;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:snow; /* or any other color */
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  height: 100px;
+}
+
+.forms {
+  margin-top: 200px;/* to prevent overlap with fixed header */
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* overlay */
+  z-index: -1;
+}
+
+.forms {
+  /* background-color: #ffffffcc; */
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in;
+  backdrop-filter: blur(5px);
+}
+
+.forms h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-in-out;
+}
+
+.forms input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.forms input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.forms button {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: black;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.4s ease;
+}
+
+.forms button:hover {
+  background-color: palevioletred;
+  transform: scale(1.05);
+  color: snow;
+}
+
+.end {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.end a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.end a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: snow;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+.forms {
+  margin-top: 200px;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
